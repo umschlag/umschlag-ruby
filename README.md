@@ -1,10 +1,10 @@
 # Umschlag: SDK for Ruby
 
 [![Build Status](http://github.dronehippie.de/api/badges/umschlag/umschlag-ruby/status.svg)](http://github.dronehippie.de/umschlag/umschlag-ruby)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3b314b2be7ca4855978df1637bd61676)](https://www.codacy.com/app/tboerger/umschlag-ruby?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=umschlag/umschlag-ruby&amp;utm_campaign=Badge_Grade)
-[![Join the Matrix chat at https://matrix.to/#/#umschlag:matrix.org](https://img.shields.io/badge/matrix-%23umschlag%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#umschlag:matrix.org)
 [![Stories in Ready](https://badge.waffle.io/umschlag/umschlag-api.svg?label=ready&title=Ready)](http://waffle.io/umschlag/umschlag-api)
-
+[![Join the Matrix chat at https://matrix.to/#/#umschlag:matrix.org](https://img.shields.io/badge/matrix-%23umschlag%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#umschlag:matrix.org)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/892ff7a444a24efeb15864823512b970)](https://www.codacy.com/app/umschlag/umschlag-ruby?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=umschlag/umschlag-ruby&amp;utm_campaign=Badge_Grade)
+[![Gem Version](https://badge.fury.io/rb/umschlag.svg)](https://badge.fury.io/rb/umschlag)
 
 **This project is under heavy development, it's not in a working state yet!**
 
@@ -20,7 +20,7 @@ TBD
 
 ## Security
 
-If you find a security issue please contact thomas@webhippie.de first.
+If you find a security issue please contact umschlag@webhippie.de first.
 
 
 ## Contributing
@@ -41,5 +41,5 @@ Apache-2.0
 ## Copyright
 
 ```
-Copyright (c) 2018 Thomas Boerger <http://www.webhippie.de>
+Copyright (c) 2018 Thomas Boerger <thomas@webhippie.de>
 ```
