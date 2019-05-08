@@ -21,5 +21,5 @@
 #
 module Umschlag
   autoload :Version,
-    File.expand_path("umschlag/version", __DIR__)
+           File.expand_path("umschlag/version", __DIR__)
 end
