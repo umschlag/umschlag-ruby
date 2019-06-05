@@ -17,15 +17,18 @@ require 'umschlag/version'
 require 'umschlag/configuration'
 
 # Models
+require 'umschlag/models/auth_login'
 require 'umschlag/models/auth_token'
 require 'umschlag/models/auth_verify'
-require 'umschlag/models/inline_object'
+require 'umschlag/models/general_error'
 require 'umschlag/models/profile'
 require 'umschlag/models/team'
 require 'umschlag/models/team_user'
 require 'umschlag/models/team_user_params'
 require 'umschlag/models/user'
 require 'umschlag/models/user_team_params'
+require 'umschlag/models/validation_error'
+require 'umschlag/models/validation_error_errors'
 
 # APIs
 require 'umschlag/api/auth_api'

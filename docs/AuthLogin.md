@@ -1,4 +1,4 @@
-# Umschlag::InlineObject
+# Umschlag::AuthLogin
 
 ## Properties
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ```ruby
 require 'Umschlag'
 
-instance = Umschlag::InlineObject.new(username: null,
+instance = Umschlag::AuthLogin.new(username: null,
                                  password: null)
 ```
 

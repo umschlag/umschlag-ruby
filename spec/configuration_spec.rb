@@ -18,7 +18,7 @@ describe Umschlag::Configuration do
   before(:each) do
     # uncomment below to setup host and base_path
     # require 'URI'
-    # uri = URI.parse("http://http:/api/v1")
+    # uri = URI.parse("http://try.umschlag.tech/api/v1")
     # Umschlag.configure do |c|
     #   c.host = uri.host
     #   c.base_path = uri.path
@@ -28,14 +28,14 @@ describe Umschlag::Configuration do
   describe '#base_url' do
     it 'should have the default value' do
       # uncomment below to test default value of the base path
-      # expect(config.base_url).to eq("http://http:/api/v1")
+      # expect(config.base_url).to eq("http://try.umschlag.tech/api/v1")
     end
 
     it 'should remove trailing slashes' do
       [nil, '', '/', '//'].each do |base_path|
         config.base_path = base_path
         # uncomment below to test trailing slashes
-        # expect(config.base_url).to eq("http://http:/api/v1")
+        # expect(config.base_url).to eq("http://try.umschlag.tech/api/v1")
       end
     end
   end

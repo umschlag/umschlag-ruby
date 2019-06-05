@@ -56,11 +56,11 @@ Please follow the [installation](#installation) instructions and then run the fo
 require 'umschlag'
 
 api = Umschlag::AuthApi.new
-auth = Umschlag::InlineObject.new # InlineObject |
+params = Umschlag::AuthLogin.new # AuthLogin | The credentials to authenticate
 
 begin
   # Authenticate an user by credentials
-  result =  api.login_user(auth)
+  result =  api.login_user(params)
   p result
 rescue Umschlag::ApiError => e
   puts "Exception when calling AuthApi->login_user: #{e}"
@@ -101,20 +101,33 @@ Class | Method | HTTP request | Description
 
 ## Documentation for models
 
+ - [Umschlag::AuthLogin](docs/AuthLogin.md)
  - [Umschlag::AuthToken](docs/AuthToken.md)
  - [Umschlag::AuthVerify](docs/AuthVerify.md)
- - [Umschlag::InlineObject](docs/InlineObject.md)
+ - [Umschlag::GeneralError](docs/GeneralError.md)
  - [Umschlag::Profile](docs/Profile.md)
  - [Umschlag::Team](docs/Team.md)
  - [Umschlag::TeamUser](docs/TeamUser.md)
  - [Umschlag::TeamUserParams](docs/TeamUserParams.md)
  - [Umschlag::User](docs/User.md)
  - [Umschlag::UserTeamParams](docs/UserTeamParams.md)
+ - [Umschlag::ValidationError](docs/ValidationError.md)
+ - [Umschlag::ValidationErrorErrors](docs/ValidationErrorErrors.md)
 
 
 ## Documentation for authorization
 
- All endpoints do not require authorization.
+
+### BasicAuth
+
+- **Type**: HTTP basic authentication
+
+### HeaderAuth
+
+
+- **Type**: API key
+- **API key parameter name**: X-API-Key
+- **Location**: HTTP header
 
 
 ## Security
