@@ -55,11 +55,11 @@ Please follow the [installation](#installation) instructions and then run the fo
 require 'umschlag'
 
 api = Umschlag::AuthApi.new
-params = Umschlag::AuthLogin.new # AuthLogin | The credentials to authenticate
+auth_login = Umschlag::AuthLogin.new # AuthLogin | The credentials to authenticate
 
 begin
   # Authenticate an user by credentials
-  result =  api.login_user(params)
+  result =  api.login_user(auth_login)
   p result
 rescue Umschlag::ApiError => e
   puts "Exception when calling AuthApi->login_user: #{e}"
@@ -81,7 +81,7 @@ Class | Method | HTTP request | Description
 *Umschlag::TeamApi* | [**append_team_to_user**](docs/TeamApi.md#append_team_to_user) | **POST** /teams/{team_id}/users | Assign a user to team
 *Umschlag::TeamApi* | [**create_team**](docs/TeamApi.md#create_team) | **POST** /teams | Create a new team
 *Umschlag::TeamApi* | [**delete_team**](docs/TeamApi.md#delete_team) | **DELETE** /teams/{team_id} | Delete a specific team
-*Umschlag::TeamApi* | [**delte_team_from_user**](docs/TeamApi.md#delte_team_from_user) | **DELETE** /teams/{team_id}/users | Remove a user from team
+*Umschlag::TeamApi* | [**delete_team_from_user**](docs/TeamApi.md#delete_team_from_user) | **DELETE** /teams/{team_id}/users | Remove a user from team
 *Umschlag::TeamApi* | [**list_team_users**](docs/TeamApi.md#list_team_users) | **GET** /teams/{team_id}/users | Fetch all users assigned to team
 *Umschlag::TeamApi* | [**list_teams**](docs/TeamApi.md#list_teams) | **GET** /teams | Fetch all available teams
 *Umschlag::TeamApi* | [**permit_team_user**](docs/TeamApi.md#permit_team_user) | **PUT** /teams/{team_id}/users | Update user perms for team
